@@ -1,9 +1,3 @@
-//
-//  AudioPlayerManager.swift
-//  HeadwayNibbleTest
-//
-//  Created by Демьян on 26.03.2024.
-//
 
 import AVFoundation
 import AVKit
@@ -12,12 +6,22 @@ import MediaPlayer
 
 final class AudioPlayerManager {
     
+    // MARK: - Variables
     var player: AVPlayer
-    private let currentTimeSubject = PassthroughSubject<Float64, Never>()
+    let currentTimeSubject = PassthroughSubject<Float64, Never>()
     var speeds = AVPlaybackSpeed.systemDefaultSpeeds
     var currentSpeedIndex: Int
     var isPlaying = false
     
+    var currentTime: AnyPublisher<Float64, Never> {
+        currentTimeSubject.eraseToAnyPublisher()
+    }
+    
+    var currentSpeedLocalized: String {
+        speeds[currentSpeedIndex].localizedNumericName
+    }
+    
+    // MARK: - Init
     init() {
         self.player = AVPlayer()
         currentSpeedIndex = speeds.firstIndex {
@@ -28,16 +32,8 @@ final class AudioPlayerManager {
         setupRemoteTransportControls()
         setupNowPlaying()
     }
-    
-    var currentTime: AnyPublisher<Float64, Never> {
-        currentTimeSubject.eraseToAnyPublisher()
-    }
-    
-    var currentSpeedLocalized: String {
-        speeds[currentSpeedIndex].localizedNumericName
-    }
-    
 
+    // MARK: - Functions
     func getDuration() async throws -> Float64 {
         guard let item = player.currentItem else {
             return .zero
@@ -150,6 +146,8 @@ final class AudioPlayerManager {
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
 }
+
+
 
 enum AudioPlayerError: Error {
     case invalidCurrentTime

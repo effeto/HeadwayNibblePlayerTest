@@ -1,9 +1,4 @@
-//
-//  HeadwayNibblePlayerTestTests.swift
-//  HeadwayNibblePlayerTestTests
-//
-//  Created by Демьян on 27.03.2024.
-//
+
 @testable import HeadwayNibblePlayerTest
 import XCTest
 import ComposableArchitecture

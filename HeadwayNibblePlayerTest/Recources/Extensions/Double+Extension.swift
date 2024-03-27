@@ -1,9 +1,3 @@
-//
-//  Double+Extension.swift
-//  HeadwayNibbleTest
-//
-//  Created by Демьян on 27.03.2024.
-//
 
 import Foundation
 

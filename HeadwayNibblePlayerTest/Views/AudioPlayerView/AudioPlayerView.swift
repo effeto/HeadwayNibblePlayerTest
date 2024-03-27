@@ -1,24 +1,18 @@
-//
-//  AudioPlayerView.swift
-//  HeadwayNibbleTest
-//
-//  Created by Демьян on 26.03.2024.
-//
-
 import SwiftUI
 import ComposableArchitecture
 
 struct AudioPlayerView:  View {
+    // MARK: - Store
     @Bindable var store: StoreOf<AudioPlayerFeature>
+
     
-
-
+    // MARK: - Body
     var body: some View {
         VStack(content: {
             self.bookCoverView
             self.keyPointView
             self.sectionTitle
-            self.progressView
+            self.timelianeView
             self.toolbar
             Spacer()
             self.modeToggle
@@ -33,7 +27,7 @@ struct AudioPlayerView:  View {
         })
     }
     
-    
+    // MARK: - Book Cover View
     private var bookCoverView: some View {
         VStack(alignment: .center, content: {
             if !Helpers.isProduction {
@@ -60,6 +54,7 @@ struct AudioPlayerView:  View {
         .padding(.top, 10)
     }
     
+    // MARK: - Key Point View
     private var keyPointView: some View {
         Text("KEY POINT \(store.currentSection?.sectionNumber ?? 0) OF \(store.state.book.sectionCount ?? 0)")
             .font(.system(size: 14, weight: .medium))
@@ -77,14 +72,15 @@ struct AudioPlayerView:  View {
             .padding(.horizontal, 20)
     }
     
-    private var progressView: some View {
+    // MARK: - Timeline View
+    private var timelianeView: some View {
         VStack {
             Slider(value: $store.currentTimeLineTime.sending(\.updateTimeLineCurrentTime) , in: 0...store.state.duration) {
             } minimumValueLabel: {
-                progressViewLabel(store.state.currentTimeLocalized)
+                timelineViewLabel(store.state.currentTimeLocalized)
                     .frame(width: 40)
             } maximumValueLabel: {
-                progressViewLabel(store.state.durationLocalized)
+                timelineViewLabel(store.state.durationLocalized)
                     .frame(width: 40)
             } onEditingChanged: { editing in
                 store.send(.timeLineValueChanged(editing))
@@ -107,12 +103,15 @@ struct AudioPlayerView:  View {
         }
     }
     
-    private func progressViewLabel(_ text: String) -> some View {
+    // MARK: - Timeline View Lavel
+    private func timelineViewLabel(_ text: String) -> some View {
         Text(text)
             .font(.system(size: 12))
             .foregroundStyle(.gray)
     }
     
+    
+    // MARK: - Toolbar
     private var toolbar: some View {
         HStack(spacing: 25) {
             Button {
@@ -145,7 +144,7 @@ struct AudioPlayerView:  View {
             } label: {
                 Image(systemName: "goforward.10")
             }
-            .font(.system(size: 32))//
+            .font(.system(size: 32))
             
             Button {
                 store.send(.nextButtonTapped)
@@ -160,6 +159,8 @@ struct AudioPlayerView:  View {
         .padding(.top, 20)
     }
     
+    
+    // MARK: - Toggle View
     private var modeToggle: some View {
         Toggle(isOn: $store.isSoundMode.sending(\.updateIsSoundOn)) {
             EmptyView()

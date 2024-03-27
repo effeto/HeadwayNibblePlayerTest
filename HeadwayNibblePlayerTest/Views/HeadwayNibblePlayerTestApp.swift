@@ -1,9 +1,3 @@
-//
-//  HeadwayNibblePlayerTestApp.swift
-//  HeadwayNibblePlayerTest
-//
-//  Created by Демьян on 27.03.2024.
-//
 
 import SwiftUI
 import ComposableArchitecture

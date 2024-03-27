@@ -1,26 +1,19 @@
-//
-//  AudioPlayerFeature.swift
-//  HeadwayNibbleTest
-//
-//  Created by Демьян on 26.03.2024.
-//
 
 import Foundation
 import ComposableArchitecture
 
 @Reducer
 struct AudioPlayerFeature {
-    
+    // MARK: - Variables
     private let audioPlayerManager = AudioPlayerManager()
     
-    
+    // MARK: - State
     @ObservableState
     struct State: Equatable {
         
         static func == (lhs: AudioPlayerFeature.State, rhs: AudioPlayerFeature.State) -> Bool {
             return true
         }
-        
         
         init(book: BookModel) {
             self.book = book
@@ -57,11 +50,9 @@ struct AudioPlayerFeature {
             book.sectionCount == (currentSection?.sectionNumber ?? 0)
         }
         
-   
-        
-        
     }
     
+    // MARK: - Actions Enum
     enum Action {
         case onAppear
         case startAudio(url: URL)
@@ -83,12 +74,9 @@ struct AudioPlayerFeature {
         case nextButtonTapped
         case goBackwardButtonTapped
         case goForwardButtonTapped
-        
-        
-     
-     
     }
     
+    // MARK: - Body
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
@@ -111,6 +99,8 @@ struct AudioPlayerFeature {
                 
             case let .startAudio(url: url):
                 state.bookURL = url
+                audioPlayerManager.currentSpeedIndex = 1
+                state.currentSpeed = audioPlayerManager.currentSpeedLocalized
                 if state.isPaused {
                     state.isPaused = false
                 }
@@ -204,6 +194,7 @@ struct AudioPlayerFeature {
                 } catch: { error, send in
                     print(error)
                 }
+                
             case .goBackwardButtonTapped:
                 return .run { [currentTime = state.currentTime] send  in
                     audioPlayerManager.skipBackwardFiveSeconds()
@@ -236,5 +227,3 @@ struct AudioPlayerFeature {
         }
     }
 }
-
-
