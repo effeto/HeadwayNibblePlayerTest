@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		A5AB49422BB4395A00B5160C /* HeadwayNibblePlayerTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB49412BB4395A00B5160C /* HeadwayNibblePlayerTestApp.swift */; };
-		A5AB49442BB4395A00B5160C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB49432BB4395A00B5160C /* ContentView.swift */; };
 		A5AB49462BB4395C00B5160C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AB49452BB4395C00B5160C /* Assets.xcassets */; };
 		A5AB49492BB4395C00B5160C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5AB49482BB4395C00B5160C /* Preview Assets.xcassets */; };
 		A5AB49532BB4395C00B5160C /* HeadwayNibblePlayerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB49522BB4395C00B5160C /* HeadwayNibblePlayerTestTests.swift */; };
-		A5AB495D2BB4395C00B5160C /* HeadwayNibblePlayerTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB495C2BB4395C00B5160C /* HeadwayNibblePlayerTestUITests.swift */; };
-		A5AB495F2BB4395C00B5160C /* HeadwayNibblePlayerTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB495E2BB4395C00B5160C /* HeadwayNibblePlayerTestUITestsLaunchTests.swift */; };
+		A5AB496D2BB439CE00B5160C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A5AB496C2BB439CE00B5160C /* ComposableArchitecture */; };
+		A5AB49702BB43BF900B5160C /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB496F2BB43BF900B5160C /* AudioPlayerManager.swift */; };
+		A5AB49772BB43C1500B5160C /* AudioPlayerFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB49732BB43C1500B5160C /* AudioPlayerFeature.swift */; };
+		A5AB49782BB43C1500B5160C /* ListeningModeToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB49752BB43C1500B5160C /* ListeningModeToggleStyle.swift */; };
+		A5AB49792BB43C1500B5160C /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB49762BB43C1500B5160C /* AudioPlayerView.swift */; };
+		A5AB49802BB43C4E00B5160C /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB497B2BB43C4D00B5160C /* Double+Extension.swift */; };
+		A5AB49812BB43C4E00B5160C /* audioName1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5AB497D2BB43C4E00B5160C /* audioName1.mp3 */; };
+		A5AB49822BB43C4E00B5160C /* audioName2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A5AB497E2BB43C4E00B5160C /* audioName2.mp3 */; };
+		A5AB49832BB43C4E00B5160C /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB497F2BB43C4E00B5160C /* BookModel.swift */; };
+		A5AB49872BB43F8100B5160C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AB49862BB43F8100B5160C /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A5AB494F2BB4395C00B5160C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A5AB49362BB4395A00B5160C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A5AB493D2BB4395A00B5160C;
-			remoteInfo = HeadwayNibblePlayerTest;
-		};
-		A5AB49592BB4395C00B5160C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A5AB49362BB4395A00B5160C /* Project object */;
 			proxyType = 1;
@@ -36,14 +36,21 @@
 /* Begin PBXFileReference section */
 		A5AB493E2BB4395A00B5160C /* HeadwayNibblePlayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadwayNibblePlayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AB49412BB4395A00B5160C /* HeadwayNibblePlayerTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadwayNibblePlayerTestApp.swift; sourceTree = "<group>"; };
-		A5AB49432BB4395A00B5160C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A5AB49452BB4395C00B5160C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5AB49482BB4395C00B5160C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5AB494E2BB4395C00B5160C /* HeadwayNibblePlayerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadwayNibblePlayerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5AB49522BB4395C00B5160C /* HeadwayNibblePlayerTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadwayNibblePlayerTestTests.swift; sourceTree = "<group>"; };
-		A5AB49582BB4395C00B5160C /* HeadwayNibblePlayerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeadwayNibblePlayerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5AB495C2BB4395C00B5160C /* HeadwayNibblePlayerTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadwayNibblePlayerTestUITests.swift; sourceTree = "<group>"; };
-		A5AB495E2BB4395C00B5160C /* HeadwayNibblePlayerTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadwayNibblePlayerTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A5AB496F2BB43BF900B5160C /* AudioPlayerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		A5AB49732BB43C1500B5160C /* AudioPlayerFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerFeature.swift; sourceTree = "<group>"; };
+		A5AB49752BB43C1500B5160C /* ListeningModeToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListeningModeToggleStyle.swift; sourceTree = "<group>"; };
+		A5AB49762BB43C1500B5160C /* AudioPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		A5AB497B2BB43C4D00B5160C /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		A5AB497D2BB43C4E00B5160C /* audioName1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioName1.mp3; sourceTree = "<group>"; };
+		A5AB497E2BB43C4E00B5160C /* audioName2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioName2.mp3; sourceTree = "<group>"; };
+		A5AB497F2BB43C4E00B5160C /* BookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		A5AB49852BB43D6900B5160C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A5AB49862BB43F8100B5160C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		A5AB49882BB444DE00B5160C /* Debug-HeadwayNibblePlayerTest.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Debug-HeadwayNibblePlayerTest.xctestplan"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +58,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AB496D2BB439CE00B5160C /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A5AB494B2BB4395C00B5160C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5AB49552BB4395C00B5160C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,9 +75,9 @@
 		A5AB49352BB4395A00B5160C = {
 			isa = PBXGroup;
 			children = (
+				A5AB49882BB444DE00B5160C /* Debug-HeadwayNibblePlayerTest.xctestplan */,
 				A5AB49402BB4395A00B5160C /* HeadwayNibblePlayerTest */,
 				A5AB49512BB4395C00B5160C /* HeadwayNibblePlayerTestTests */,
-				A5AB495B2BB4395C00B5160C /* HeadwayNibblePlayerTestUITests */,
 				A5AB493F2BB4395A00B5160C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +87,6 @@
 			children = (
 				A5AB493E2BB4395A00B5160C /* HeadwayNibblePlayerTest.app */,
 				A5AB494E2BB4395C00B5160C /* HeadwayNibblePlayerTestTests.xctest */,
-				A5AB49582BB4395C00B5160C /* HeadwayNibblePlayerTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,10 +94,12 @@
 		A5AB49402BB4395A00B5160C /* HeadwayNibblePlayerTest */ = {
 			isa = PBXGroup;
 			children = (
-				A5AB49412BB4395A00B5160C /* HeadwayNibblePlayerTestApp.swift */,
-				A5AB49432BB4395A00B5160C /* ContentView.swift */,
-				A5AB49452BB4395C00B5160C /* Assets.xcassets */,
+				A5AB49852BB43D6900B5160C /* Info.plist */,
+				A5AB49712BB43C1500B5160C /* Views */,
+				A5AB496E2BB43BF900B5160C /* Managers */,
+				A5AB49842BB43C5400B5160C /* Recources */,
 				A5AB49472BB4395C00B5160C /* Preview Content */,
+				A5AB49452BB4395C00B5160C /* Assets.xcassets */,
 			);
 			path = HeadwayNibblePlayerTest;
 			sourceTree = "<group>";
@@ -118,13 +120,67 @@
 			path = HeadwayNibblePlayerTestTests;
 			sourceTree = "<group>";
 		};
-		A5AB495B2BB4395C00B5160C /* HeadwayNibblePlayerTestUITests */ = {
+		A5AB496E2BB43BF900B5160C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				A5AB495C2BB4395C00B5160C /* HeadwayNibblePlayerTestUITests.swift */,
-				A5AB495E2BB4395C00B5160C /* HeadwayNibblePlayerTestUITestsLaunchTests.swift */,
+				A5AB496F2BB43BF900B5160C /* AudioPlayerManager.swift */,
 			);
-			path = HeadwayNibblePlayerTestUITests;
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A5AB49712BB43C1500B5160C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB49412BB4395A00B5160C /* HeadwayNibblePlayerTestApp.swift */,
+				A5AB49722BB43C1500B5160C /* AudioPlayerView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5AB49722BB43C1500B5160C /* AudioPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB49742BB43C1500B5160C /* CustomView */,
+				A5AB49732BB43C1500B5160C /* AudioPlayerFeature.swift */,
+				A5AB49762BB43C1500B5160C /* AudioPlayerView.swift */,
+			);
+			path = AudioPlayerView;
+			sourceTree = "<group>";
+		};
+		A5AB49742BB43C1500B5160C /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB49752BB43C1500B5160C /* ListeningModeToggleStyle.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		A5AB497A2BB43C4D00B5160C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB497B2BB43C4D00B5160C /* Double+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5AB497C2BB43C4E00B5160C /* MockBooksAudioFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB497D2BB43C4E00B5160C /* audioName1.mp3 */,
+				A5AB497E2BB43C4E00B5160C /* audioName2.mp3 */,
+			);
+			path = MockBooksAudioFiles;
+			sourceTree = "<group>";
+		};
+		A5AB49842BB43C5400B5160C /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				A5AB497C2BB43C4E00B5160C /* MockBooksAudioFiles */,
+				A5AB497A2BB43C4D00B5160C /* Extensions */,
+				A5AB497F2BB43C4E00B5160C /* BookModel.swift */,
+				A5AB49862BB43F8100B5160C /* Helpers.swift */,
+			);
+			path = Recources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +199,9 @@
 			dependencies = (
 			);
 			name = HeadwayNibblePlayerTest;
+			packageProductDependencies = (
+				A5AB496C2BB439CE00B5160C /* ComposableArchitecture */,
+			);
 			productName = HeadwayNibblePlayerTest;
 			productReference = A5AB493E2BB4395A00B5160C /* HeadwayNibblePlayerTest.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +224,6 @@
 			productReference = A5AB494E2BB4395C00B5160C /* HeadwayNibblePlayerTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A5AB49572BB4395C00B5160C /* HeadwayNibblePlayerTestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5AB49682BB4395C00B5160C /* Build configuration list for PBXNativeTarget "HeadwayNibblePlayerTestUITests" */;
-			buildPhases = (
-				A5AB49542BB4395C00B5160C /* Sources */,
-				A5AB49552BB4395C00B5160C /* Frameworks */,
-				A5AB49562BB4395C00B5160C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A5AB495A2BB4395C00B5160C /* PBXTargetDependency */,
-			);
-			name = HeadwayNibblePlayerTestUITests;
-			productName = HeadwayNibblePlayerTestUITests;
-			productReference = A5AB49582BB4395C00B5160C /* HeadwayNibblePlayerTestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +241,6 @@
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = A5AB493D2BB4395A00B5160C;
 					};
-					A5AB49572BB4395C00B5160C = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = A5AB493D2BB4395A00B5160C;
-					};
 				};
 			};
 			buildConfigurationList = A5AB49392BB4395A00B5160C /* Build configuration list for PBXProject "HeadwayNibblePlayerTest" */;
@@ -215,13 +252,15 @@
 				Base,
 			);
 			mainGroup = A5AB49352BB4395A00B5160C;
+			packageReferences = (
+				A5AB496B2BB439CE00B5160C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = A5AB493F2BB4395A00B5160C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				A5AB493D2BB4395A00B5160C /* HeadwayNibblePlayerTest */,
 				A5AB494D2BB4395C00B5160C /* HeadwayNibblePlayerTestTests */,
-				A5AB49572BB4395C00B5160C /* HeadwayNibblePlayerTestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,18 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5AB49492BB4395C00B5160C /* Preview Assets.xcassets in Resources */,
+				A5AB49822BB43C4E00B5160C /* audioName2.mp3 in Resources */,
 				A5AB49462BB4395C00B5160C /* Assets.xcassets in Resources */,
+				A5AB49812BB43C4E00B5160C /* audioName1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A5AB494C2BB4395C00B5160C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5AB49562BB4395C00B5160C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,8 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5AB49442BB4395A00B5160C /* ContentView.swift in Sources */,
 				A5AB49422BB4395A00B5160C /* HeadwayNibblePlayerTestApp.swift in Sources */,
+				A5AB49702BB43BF900B5160C /* AudioPlayerManager.swift in Sources */,
+				A5AB49802BB43C4E00B5160C /* Double+Extension.swift in Sources */,
+				A5AB49872BB43F8100B5160C /* Helpers.swift in Sources */,
+				A5AB49782BB43C1500B5160C /* ListeningModeToggleStyle.swift in Sources */,
+				A5AB49772BB43C1500B5160C /* AudioPlayerFeature.swift in Sources */,
+				A5AB49792BB43C1500B5160C /* AudioPlayerView.swift in Sources */,
+				A5AB49832BB43C4E00B5160C /* BookModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,15 +310,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5AB49542BB4395C00B5160C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A5AB495D2BB4395C00B5160C /* HeadwayNibblePlayerTestUITests.swift in Sources */,
-				A5AB495F2BB4395C00B5160C /* HeadwayNibblePlayerTestUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +317,6 @@
 			isa = PBXTargetDependency;
 			target = A5AB493D2BB4395A00B5160C /* HeadwayNibblePlayerTest */;
 			targetProxy = A5AB494F2BB4395C00B5160C /* PBXContainerItemProxy */;
-		};
-		A5AB495A2BB4395C00B5160C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A5AB493D2BB4395A00B5160C /* HeadwayNibblePlayerTest */;
-			targetProxy = A5AB49592BB4395C00B5160C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -352,6 +378,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROD_BUILD = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -408,6 +435,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PROD_BUILD = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -425,6 +453,7 @@
 				DEVELOPMENT_TEAM = HJ2ZQVYQZ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HeadwayNibblePlayerTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +483,7 @@
 				DEVELOPMENT_TEAM = HJ2ZQVYQZ6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HeadwayNibblePlayerTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -512,42 +542,6 @@
 			};
 			name = Release;
 		};
-		A5AB49692BB4395C00B5160C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HJ2ZQVYQZ6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.demyan.HeadwayNibblePlayerTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HeadwayNibblePlayerTest;
-			};
-			name = Debug;
-		};
-		A5AB496A2BB4395C00B5160C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HJ2ZQVYQZ6;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.demyan.HeadwayNibblePlayerTestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HeadwayNibblePlayerTest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,7 +552,7 @@
 				A5AB49612BB4395C00B5160C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A5AB49622BB4395C00B5160C /* Build configuration list for PBXNativeTarget "HeadwayNibblePlayerTest" */ = {
 			isa = XCConfigurationList;
@@ -567,7 +561,7 @@
 				A5AB49642BB4395C00B5160C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A5AB49652BB4395C00B5160C /* Build configuration list for PBXNativeTarget "HeadwayNibblePlayerTestTests" */ = {
 			isa = XCConfigurationList;
@@ -576,18 +570,28 @@
 				A5AB49672BB4395C00B5160C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A5AB49682BB4395C00B5160C /* Build configuration list for PBXNativeTarget "HeadwayNibblePlayerTestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A5AB49692BB4395C00B5160C /* Debug */,
-				A5AB496A2BB4395C00B5160C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5AB496B2BB439CE00B5160C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5AB496C2BB439CE00B5160C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5AB496B2BB439CE00B5160C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5AB49362BB4395A00B5160C /* Project object */;
 }

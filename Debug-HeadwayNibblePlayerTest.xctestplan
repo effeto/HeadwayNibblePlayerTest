@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "D0EFBD6C-CCFC-41E1-8A36-DB7A1C2F06A8",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:HeadwayNibblePlayerTest.xcodeproj",
+      "identifier" : "A5AB493D2BB4395A00B5160C",
+      "name" : "HeadwayNibblePlayerTest"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:HeadwayNibblePlayerTest.xcodeproj",
+        "identifier" : "A5AB494D2BB4395C00B5160C",
+        "name" : "HeadwayNibblePlayerTestTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:HeadwayNibblePlayerTest.xcodeproj",
+        "identifier" : "A5AB49572BB4395C00B5160C",
+        "name" : "HeadwayNibblePlayerTestUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

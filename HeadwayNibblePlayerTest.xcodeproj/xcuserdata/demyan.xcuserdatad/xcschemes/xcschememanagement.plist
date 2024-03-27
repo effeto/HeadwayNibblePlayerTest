@@ -4,10 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HeadwayNibblePlayerTest.xcscheme_^#shared#^_</key>
+		<key>Debug-HeadwayNibblePlayerTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Release-HeadwayNibblePlayerTest.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A5AB493D2BB4395A00B5160C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5AB494D2BB4395C00B5160C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5AB49572BB4395C00B5160C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
